@@ -8,13 +8,50 @@ export const Web2Design = () => {
   const [clickedImages, setClickedImages] = useState([]); // Tracks the clicked images
 
   const images = [
-    { src: "/images/web2-design1.png", name: "Mmuta", description: "Mobile App (Case Study)", type: "EdTech" },
-    { src: "/images/web2-design2.png", name: "Illustratify", description: "Landing Page", type: "Design, Tech" },
-    { src: "/images/web2-design3.png", name: "Ogilvista", description: "Web App", type: "IaaS, Ad & Marketing" },
-    { src: "/images/web2-design4.png", name: "PlateGuard Pro", description: "Mobile App", type: "Tech, AI, Security" },
-    { src: "/images/web2-design5.png", name: "Airly", description: "Landing Page", type: "Transportation" },
-    { src: "/images/web2-design6.png", name: "eLab Academy",description: "Website", type: "Medical, Health" },
+    {
+      src: "/images/web2-design1.png",
+      name: "Mmuta",
+      description: "Mobile App (Case Study)",
+      type: "EdTech",
+      link: "https://www.behance.net/gallery/188815537/Mmuta-%28EdTect%29-Case-Study-Mobile-App-Design",
+    },
+    {
+      src: "/images/web2-design2.png",
+      name: "Illustratify",
+      description: "Landing Page",
+      type: "Design, Tech",
+      link: "https://www.behance.net/gallery/193997181/Illustratify-Landing-Page-Graphic-Design-Suite",
+    },
+    {
+      src: "/images/web2-design3.png",
+      name: "Ogilvista",
+      description: "Web App",
+      type: "IaaS, Ad & Marketing",
+      link: "https://www.behance.net/gallery/194034085/Advertising-Platform-%28IaaS%29-Dashboard-Design",
+    },
+    {
+      src: "/images/web2-design4.png",
+      name: "PlateGuard Pro",
+      description: "Mobile App",
+      type: "Tech, AI, Security",
+      link: "https://www.behance.net/gallery/194120131/PlateGuard-Pro-%28ACPRS%29-Mobile-App-Demo",
+    },
+    {
+      src: "/images/web2-design5.png",
+      name: "Airly",
+      description: "Landing Page",
+      type: "Transportation",
+      link: "https://www.behance.net/gallery/188883729/Airly-Landing-Page-%28Flight-Booking-Company%29",
+    },
+    {
+      src: "/images/web2-design6.png",
+      name: "eLab Academy",
+      description: "Website",
+      type: "Medical, Health",
+      link: "https://www.behance.net/gallery/212976623/E-Lab-Academy-Website-Design",
+    },
   ];
+  
 
   const handleImageClick = (index) => {
     if (!clickedImages.includes(index)) {
@@ -85,7 +122,14 @@ export const Web2Design = () => {
                 <div className="flex justify-between items-center mt-4">
                   <p className=" text-sm text-[#9DF6FA]">{image.type}</p>
                   <button className="bg-[#3A777A]/80 px-12 py-1 rounded-full text-white font-medium text-sm">
+                  <a
+              href={image.link}
+               target="_blank"
+            rel="noopener noreferrer"
+            className='flex flex-col items-center justify-center'
+      >
                     View
+               </a>
                   </button>
                 </div>
               </div>

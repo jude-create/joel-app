@@ -46,7 +46,7 @@ const Header = () => {
         scale: 1
       }}
       transition={{duration: 1.8}}>
-      <Link href="#hero">
+      <Link href="/#hero">
         <Image
           src="/images/logo.png"
           alt="logo"
@@ -153,7 +153,7 @@ const Header = () => {
     </div>
     <div className="p-6 flex flex-col space-y-10 mt-10">
       <Link
-        href="#designs"
+        href="/#designs"
         className={`text-[#FFFFFF] font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
           pathname === "/designs" ? "text-white" : "text-[#74EDF4]"
         }`}
@@ -162,7 +162,7 @@ const Header = () => {
         DESIGN PORTFOLIO
       </Link>
       <Link
-        href="#brands"
+        href="/#brands"
         className={`text-[#FFFFFF] font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
           pathname === "/brands" ? "text-white" : "text-[#74EDF4]"
         }`}
@@ -180,7 +180,7 @@ const Header = () => {
         THE JM PODCAST
       </Link>
       <Link
-        href="#socials"
+        href="/#socials"
         className={`text-[#FFFFFF] font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
           pathname === "/socials" ? "text-white" : "text-[#74EDF4]"
         }`}

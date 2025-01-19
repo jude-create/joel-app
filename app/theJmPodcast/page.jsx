@@ -28,26 +28,36 @@ export default function TheJmPodcast() {
             </p>
 
             <div className="pt-10 space-y-8 flex flex-col items-center">
-              <button className="bg-[#FF0000] flex items-center justify-center px-8 py-2 rounded-full space-x-2">
+              <button className="bg-[#FF0000] flex items-center justify-center px-8 py-4 rounded-full space-x-2">
                 <p>Subscribe to Youtube channel</p>
-                <Image
+                
+                  <a href='https://www.youtube.com/@the-jm-podcast'
+         target="_blank"
+          rel="noopener noreferrer">
+            <Image
                   className="w-4 h-3"
                   src="/images/youtube.png"
                   alt="youtube"
                   height={14}
                   width={10}
-                />
+                  />
+          </a>
+               
               </button>
 
-              <button className="bg-[#158E95] flex items-center justify-center px-8 py-2 rounded-full space-x-2">
+              <button className="bg-[#158E95] flex items-center justify-center px-8 py-4 rounded-full space-x-2">
                 <p>Follow on Spotify</p>
-                <Image
-                  className="w-4 h-4"
+                <a href='https://creators.spotify.com/pod/show/joel-mgbikeh'
+         target="_blank"
+          rel="noopener noreferrer">
+            <Image
+                  className="w-4 h-3"
                   src="/images/spotify.png"
-                  alt="youtube"
+                  alt="spotify"
                   height={14}
                   width={10}
-                />
+                  />
+          </a>
               </button>
             </div>
           </div>

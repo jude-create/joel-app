@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+@font-face {
+  font-family: 'Anta';
+  src: url('/font/Anta-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Unigeo64";
+  src: url('/font/Unigeo64-Regular-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+/* Example Usage */
+
+body {
+  font-family: 'Anta', sans-serif;
+}

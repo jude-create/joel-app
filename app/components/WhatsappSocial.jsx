@@ -2,7 +2,7 @@ import React from 'react'
 
 function WhatsappSocial() {
   return (
-    <div className='text-center font-unigeo space-y-7 '>
+    <div className='text-center font-unigeo space-y-4 '>
         <p className='text-lg font-medium tracking-wider '>LET’S WORK ON YOUR PROJECT</p>
         <p className='text-base w-80 leading-9 '>If you need a product designer who speaks and understands both human and business, crafting solutions that delight users and drive results,
          I'm your person. Let's work!</p>

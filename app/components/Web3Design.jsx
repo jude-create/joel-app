@@ -38,7 +38,7 @@ export const Web3Design = () => {
           </div>
         </div>
   
-        <div className="relative mt-10 space-y-7 pb-28 px-5">
+        <div className="relative mt-10 space-y-7 pb-48 px-5">
           {images.map((image, index) => (
             <div
               key={index}

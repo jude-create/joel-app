@@ -18,10 +18,10 @@ export const Brands = () => {
 
       <div className='mt-10'>
         <Image
-        className='w-full h-[80%]'
+        className='w-full h-[60%]'
         src="/images/brands.png"
         alt='brands'
-        width={339}
+        width={400}
         height={700}
          />
       </div>

@@ -42,7 +42,6 @@ export const Web2Design = () => {
 
       <div 
       
-      transition={{duration: 1.8}}
       className="relative mt-10 space-y-7  pb-10 px-5 pt-2  md:grid grid-cols-3 md:gap-3">
         {images.map((image, index) => (
           <div

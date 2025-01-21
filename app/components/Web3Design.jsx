@@ -27,18 +27,18 @@ export const Web3Design = () => {
     };
   
     return (
-      <div className="p-4  relative flex flex-col items-center mx-auto w-screen top-14 ">
-        <div className="md:flex">
-          <p className="text-center text-[#74EDF4] text-lg font-normal tracking-wider">
+      <div className="p-4  relative flex flex-col items-center mx-auto w-screen top-14 md:items-start ">
+        <div className="md:flex md:space-x-5 md:px-6">
+          <p className="text-center text-[#74EDF4] text-lg md:text-xl lg:text-2xl font-normal tracking-wider">
             Web3 DESIGN PORTFOLIO
           </p>
           <div className="mt-4 flex flex-col items-center">
-            <div className="border-2 border-[#FFFFFF] bg-[#FFFFFF] w-28" />
-            <div className="border-2 border-[#158E95] bg-[#158E95] w-28" />
+            <div className="border-2 border-[#FFFFFF] bg-[#FFFFFF] w-28 md:w-[540px] lg:w-[850px] xl:w-[900px] " />
+            <div className="border-2 border-[#158E95] bg-[#158E95] w-28 md:w-[540px] lg:w-[850px] xl:w-[900px]" />
           </div>
         </div>
   
-        <div className="relative mt-10 space-y-7 pb-48 px-5">
+        <div className="relative mt-10 space-y-7 pb-48 px-5 md:px-6  md:grid grid-cols-3 md:gap-4  md:space-y-0 ">
           {images.map((image, index) => (
             <div
               key={index}
@@ -50,14 +50,14 @@ export const Web3Design = () => {
                 alt={image.name}
                 width={399}
                 height={221}
-                className="transition duration-75 ease-in-out filter rounded-md shadow-lg shadow-black"
+                className="transition duration-75 ease-in-out filter rounded-md shadow-lg shadow-black lg:w-[90%]"
               />
   
               {/* Overlay */}
               {clickedImages.includes(index) && (
                 <div
                   className="absolute h-[97%] mt-1 w-[99%]  inset-0 bg-[#000000]/50 flex flex-col justify-between 
-                  z-10 transition duration-75 ease-out p-4 shadow-lg shadow-black rounded-md"
+                  z-10 transition duration-75 ease-out p-4 shadow-lg shadow-black rounded-md lg:w-[89%]"
                 >
                   {/* Top Section */}
                   <div>

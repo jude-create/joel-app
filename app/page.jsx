@@ -19,15 +19,14 @@ export default function Home() {
 
   return (
     <main
-      className="bg-combined-radial h-screen text-white overflow-y-scroll overflow-x-hidden z-0 snap-y snap-mandatory scroll-smooth scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#74EDF4]/80"
+      className="bg-combined-radial h-screen text-white overflow-y-scroll overflow-x-hidden  snap-y snap-mandatory scroll-smooth scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#74EDF4]/80"
     >
-      {/** Header */}
-      <Header />
+     
 
       {/** Hero */}
       <section
         id="hero"
-        className="snap-start"
+        className='snap-center'
         
         
         
@@ -80,6 +79,8 @@ export default function Home() {
       >
         <Socials />
       </motion.section>
+
+      
 
       {/** Footer */}
       <section

@@ -9,9 +9,9 @@ export default function TheJmPodcast() {
         className="bg-combined-radial h-screen text-white overflow-y-auto snap-y snap-mandatory overflow-x-hidden scroll-smooth scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#74EDF4]/80"
       >
         <Header />
-        <section className="flex flex-col justify-between h-full snap-start pt-36">
+        <section className="flex flex-col justify-between   pt-36 lg:pt-10">
           {/* Main Content */}
-          <div className="flex flex-col justify-center items-center  space-y-12 font-unigeo">
+          <div className="flex flex-col justify-center items-center  space-y-12 md:space-y-14 font-unigeo">
             <div className="flex space-x-1">
               <Image src="/images/logo2.png" alt="logo" width={35} height={42} />
               <Image
@@ -22,14 +22,14 @@ export default function TheJmPodcast() {
               />
             </div>
 
-            <p className="font-semibold text-3xl">Coming soon...</p>
-            <p className="text-base w-64 text-center">
+            <p className="font-semibold text-3xl md:text-6xl md:font-bold">Coming soon...</p>
+            <p className="text-base md:text-2xl w-64 md:w-full text-center">
               Stay connected to receive updates when the podcast begins.
             </p>
 
-            <div className="pt-10 space-y-8 flex flex-col items-center">
+            <div className="pt-10 space-y-8 flex flex-col items-center lg:pt-7">
               <button className="bg-[#FF0000] flex items-center justify-center px-8 py-4 rounded-full space-x-2">
-                <p>Subscribe to Youtube channel</p>
+                <p className='md:font-medium md:text-lg'>Subscribe to Youtube channel</p>
                 
                   <a href='https://www.youtube.com/@the-jm-podcast'
          target="_blank"
@@ -46,7 +46,7 @@ export default function TheJmPodcast() {
               </button>
 
               <button className="bg-[#158E95] flex items-center justify-center px-8 py-4 rounded-full space-x-2">
-                <p>Follow on Spotify</p>
+                <p className='md:font-medium md:text-lg'>Follow on Spotify</p>
                 <a href='https://creators.spotify.com/pod/show/joel-mgbikeh'
          target="_blank"
           rel="noopener noreferrer">
@@ -63,7 +63,7 @@ export default function TheJmPodcast() {
           </div>
 
           {/* Bottom Section */}
-          <div className='pt-10'>
+          <div className='pt-24 lg:pt-8'>
             <div className="border-4 border-[#FFFFFF] w-full" />
             <div className="border-4 border-[#172F31] bg-[#172F31] w-full h-[29px]" />
             <div className="border-4 border-[#0C1818] bg-[#0C1818] w-full h-[29px]" />

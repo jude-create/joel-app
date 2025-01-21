@@ -11,27 +11,16 @@ import {motion} from "framer-motion";
 const Header = () => {
     const pathname = usePathname(); // Get the current path
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+ 
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Check if the user scrolled down
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  
 
   return (
-    <header className={`sticky top-3 bg-transparent  p-5 flex items-center justify-between max-w-7xl mx-auto z-20 xl:items-center ${
-        isScrolled ? "bg-combined-radial shadow-md " : "bg-transparent " } z-50`}>
+    <header className=" top-3 bg-transparent  py-7 px-7 flex items-center justify-between w-screen mx-auto  z-20 xl:items-center md:px-8">
       {/* Logo */}
       <motion.div
       initial={{
@@ -58,10 +47,23 @@ const Header = () => {
       </motion.div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex md:space-x-5 lg:space-x-8 md:items-center md:justify-center">
+      <motion.nav
+      initial={{
+        y:-400,
+      opacity:0,
+      scale:0.3
+      }}
+      animate={{
+        y:0,
+        opacity:1,
+        scale:1
+      }}
+      transition={{duration : 1.8}} 
+   
+       className="hidden md:flex md:space-x-5 lg:space-x-8 md:items-center md:justify-center">
       <Link
-            href="#designs"
-            className={`text-[#FFFFFF] font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
+            href="/#designs"
+            className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
              pathname === "/designs"
              ? "text-white"
              :  "text-[#74EDF4]"
@@ -71,8 +73,8 @@ const Header = () => {
             DESIGN PORTFOLIO
           </Link>
           <Link
-            href="#brands"
-            className={`text-[#FFFFFF] font-normal hover:text-[#74EDF4]  transition ease-in-out duration-300 ${
+            href="/#brands"
+            className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4]  transition ease-in-out duration-300 ${
              pathname === "/brands"
              ? "text-white"
              :  "text-[#74EDF4]"
@@ -84,7 +86,7 @@ const Header = () => {
 
           <Link
             href="/theJmPodcast"
-            className={`text-[#FFFFFF] font-normal hover:text-[#74EDF4]  transition ease-in-out duration-300 ${
+            className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4]  transition ease-in-out duration-300 ${
              pathname === "/theJmPodcast"
              ? "text-white"
              :  "text-[#74EDF4]"
@@ -95,8 +97,8 @@ const Header = () => {
           </Link>
 
           <Link
-            href="#socials"
-            className={`text-[#FFFFFF] font-normal hover:text-[#74EDF4]  transition ease-in-out duration-300 ${
+            href="/#socials"
+            className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4]  transition ease-in-out duration-300 ${
              pathname === "/socials"
              ? "text-white"
              :  "text-[#74EDF4]"
@@ -104,7 +106,7 @@ const Header = () => {
           >
            SOCIALS
           </Link>
-      </nav>
+      </motion.nav>
 
       {/* Mobile Menu Icon */}
        <motion.div
@@ -154,7 +156,7 @@ const Header = () => {
     <div className="p-6 flex flex-col space-y-10 mt-10">
       <Link
         href="/#designs"
-        className={`text-[#FFFFFF] font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
+        className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
           pathname === "/designs" ? "text-white" : "text-[#74EDF4]"
         }`}
         onClick={() => setMenuOpen(false)}
@@ -163,7 +165,7 @@ const Header = () => {
       </Link>
       <Link
         href="/#brands"
-        className={`text-[#FFFFFF] font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
+        className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
           pathname === "/brands" ? "text-white" : "text-[#74EDF4]"
         }`}
         onClick={() => setMenuOpen(false)}
@@ -172,7 +174,7 @@ const Header = () => {
       </Link>
       <Link
         href="/theJmPodcast"
-        className={`text-[#FFFFFF] font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
+        className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
           pathname === "/theJmPodcast" ? "text-white" : "text-[#74EDF4]"
         }`}
         onClick={() => setMenuOpen(false)}
@@ -181,7 +183,7 @@ const Header = () => {
       </Link>
       <Link
         href="/#socials"
-        className={`text-[#FFFFFF] font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
+        className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
           pathname === "/socials" ? "text-white" : "text-[#74EDF4]"
         }`}
         onClick={() => setMenuOpen(false)}

@@ -85,9 +85,9 @@ const Header = () => {
           </Link>
 
           <Link
-            href="/TheJmPodcast"
+            href="/thejmpodcast"
             className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4]  transition ease-in-out duration-300 ${
-             pathname === "/theJmPodcast"
+             pathname === "/thejmpodcast"
              ? "text-white"
              :  "text-[#74EDF4]"
             }`}
@@ -173,9 +173,9 @@ const Header = () => {
         BRANDS
       </Link>
       <Link
-        href="/TheJmPodcast"
+        href="/thejmpodcast"
         className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
-          pathname === "/theJmPodcast" ? "text-white" : "text-[#74EDF4]"
+          pathname === "/thejmpodcast" ? "text-white" : "text-[#74EDF4]"
         }`}
         onClick={() => setMenuOpen(false)}
       >

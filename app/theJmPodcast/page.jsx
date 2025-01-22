@@ -66,13 +66,14 @@ export default function TheJmPodcast() {
                 </a>
               </button>
             </div>
+            </div>
 
-            <div className="  w-full flex flex-col flex-grow ">
+            <div className="  w-full flex flex-col  ">
               <div className="border-4 border-[#FFFFFF] w-full" />
               <div className="border-4 border-[#172F31] bg-[#172F31] w-full h-[29px]" />
               <div className="border-4 border-[#0C1818] bg-[#0C1818] w-full h-[29px]" />
             </div>
-          </div>
+          
         </section>
       </main>
     </>

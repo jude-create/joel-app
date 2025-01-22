@@ -3,7 +3,7 @@ import React from "react";
 
 export const Brands = () => {
   return (
-    <div className=" relative flex flex-col items-center mx-auto w-screen top-28  md:mb-0 md:top-40">
+    <div className=" relative flex flex-col items-center mx-auto w-screen top-24  md:mb-0 md:top-40">
       {/* Heading Section */}
       <div className="md:flex md:space-x-4 lg:space-x-5  lg:px-12 ">
         <p className="text-center text-[#74EDF4] text-lg md:text-xl lg:text-2xl font-normal tracking-wider">
@@ -16,9 +16,9 @@ export const Brands = () => {
       </div>
 
       {/*Mobile Image Section */}
-      <div className="  md:mx-auto md:hidden">
+      <div className="  md:mx-auto md:hidden px-14 py-11">
         <Image
-          className="w-full  brightness-110 contrast-125 "
+          className="  brightness-110 contrast-125 "
           src="/images/brands.png"
           alt="brands"
           width={339}

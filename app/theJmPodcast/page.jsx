@@ -9,7 +9,7 @@ export default function TheJmPodcast() {
         className="bg-combined-radial min-h-screen text-white overflow-x-hidden scroll-smooth scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#74EDF4]/80 flex flex-col"
       >
         <Header />
-        <section className="flex flex-col justify-between flex-grow mt-2 ">
+        <section className="flex flex-col justify-between flex-grow  ">
           {/* Main Content */}
           <div className="flex flex-col justify-center items-center space-y-10 md:space-y-20 font-unigeo flex-grow">
             <div className="flex space-x-1">

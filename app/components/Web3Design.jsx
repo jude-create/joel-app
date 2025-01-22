@@ -8,12 +8,52 @@ export const Web3Design = () => {
     const [clickedImages, setClickedImages] = useState([]); // Tracks the clicked images
 
     const images = [
-      { src: "/images/web3-design1.png", name: "Mmuta", description: "Mobile App (Case Study)", type: "EdTech" },
-      { src: "/images/web3-design2.png", name: "Illustratify", description: "Landing Page", type: "Design, Tech" },
-      { src: "/images/web3-design3.png", name: "Ogilvista", description: "Web App", type: "IaaS, Ad & Marketing" },
-      { src: "/images/web3-design3.png", name: "PlateGuard Pro", description: "Mobile App", type: "Tech, AI, Security" },
-      { src: "/images/web3-design3.png", name: "Airly", description: "Landing Page", type: "Transportation" },
-      { src: "/images/web3-design3.png", name: "eLab Academy",description: "Website", type: "Medical, Health" },
+      {
+         src: "/images/web3-design1.png",
+         name: "Mmuta", 
+         description: "Mobile App",
+          type: "EdTech",
+          link: "https://www.behance.net/gallery/188815537/Mmuta-(EdTect)-Case-Study-Mobile-App-Design/modules/1067757739",
+         },
+
+      { 
+        src: "/images/web3-design2.png", 
+        name: "Mmuta", 
+        description: "Mobile App", 
+        type: "EdTech",
+        link: "https://www.behance.net/gallery/194034085/Advertising-Platform-(IaaS)-Dashboard-Design/modules/1097919399",
+      },
+
+      { 
+        src: "/images/web3-design3.png",
+        name: "Mmuta", 
+        description: "Mobile App", 
+        type: "EdTech", 
+        link: "https://www.behance.net/gallery/194034085/Advertising-Platform-(IaaS)-Dashboard-Design/modules/1097919399",
+        },
+
+      { src: "/images/web3-design3.png", 
+        name: "Mobile App", 
+        description: "Mobile App", 
+        type: "EdTech",
+        link: "https://www.behance.net/gallery/194034085/Advertising-Platform-(IaaS)-Dashboard-Design/modules/1097919399",
+      },
+
+      { 
+        src: "/images/web3-design3.png", 
+        name: "Mobile App", 
+        description: "Mobile App", 
+        type: "EdTech",
+         link: "https://www.behance.net/gallery/194034085/Advertising-Platform-(IaaS)-Dashboard-Design/modules/1097919399",
+       },
+
+      { 
+        src: "/images/web3-design3.png",
+        name: "Mobile App",
+        description: "Mobile App", 
+        type: "EdTech" ,
+        link: "https://www.behance.net/gallery/194034085/Advertising-Platform-(IaaS)-Dashboard-Design/modules/1097919399",
+        },
     ];
   
     const handleImageClick = (index) => {
@@ -81,9 +121,16 @@ export const Web3Design = () => {
                   {/* Bottom Section */}
                   <div className="flex justify-between items-center mt-4">
                     <p className=" text-sm text-[#9DF6FA]">{image.type}</p>
-                    <button className="bg-[#3A777A]/60 px-12 py-2 rounded-full text-white font-medium text-sm">
-                      View
-                    </button>
+                    <button className="bg-[#3A777A]/80 px-12 py-1 rounded-full text-white font-medium text-sm">
+                  <a
+              href={image.link}
+               target="_blank"
+            rel="noopener noreferrer"
+            className='flex flex-col items-center justify-center'
+      >
+                    View
+               </a>
+                  </button>
                   </div>
                 </div>
               )}

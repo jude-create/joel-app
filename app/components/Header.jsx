@@ -85,7 +85,7 @@ const Header = () => {
           </Link>
 
           <Link
-            href="/thejmpodcast"
+            href="/theJmPodcast"
             className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4]  transition ease-in-out duration-300 ${
              pathname === "/thejmpodcast"
              ? "text-white"
@@ -173,7 +173,7 @@ const Header = () => {
         BRANDS
       </Link>
       <Link
-        href="/thejmpodcast"
+        href="/theJmPodcast"
         className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
           pathname === "/thejmpodcast" ? "text-white" : "text-[#74EDF4]"
         }`}

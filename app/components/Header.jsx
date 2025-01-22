@@ -20,7 +20,7 @@ const Header = () => {
   
 
   return (
-    <header className=" top-3 bg-transparent  py-7 px-7 flex items-center justify-between w-screen mx-auto  z-20 xl:items-center md:px-8">
+    <header className=" top-3 bg-transparent  py-10 px-7 flex items-center justify-between w-screen mx-auto  z-20 xl:items-center xl:px-16 lg:px-10 md:px-8">
       {/* Logo */}
       <motion.div
       initial={{
@@ -60,7 +60,7 @@ const Header = () => {
       }}
       transition={{duration : 1.8}} 
    
-       className="hidden md:flex md:space-x-5 lg:space-x-8 md:items-center md:justify-center">
+       className="hidden md:flex md:space-x-4 lg:space-x-14 md:items-center md:justify-center">
       <Link
             href="/#designs"
             className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
@@ -85,7 +85,7 @@ const Header = () => {
           </Link>
 
           <Link
-            href="/theJmPodcast"
+            href="/TheJmPodcast"
             className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4]  transition ease-in-out duration-300 ${
              pathname === "/theJmPodcast"
              ? "text-white"
@@ -173,7 +173,7 @@ const Header = () => {
         BRANDS
       </Link>
       <Link
-        href="/theJmPodcast"
+        href="/TheJmPodcast"
         className={`text-[#FFFFFF] text-lg font-normal hover:text-[#74EDF4] transition ease-in-out duration-300 ${
           pathname === "/theJmPodcast" ? "text-white" : "text-[#74EDF4]"
         }`}

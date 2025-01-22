@@ -19,14 +19,15 @@ export default function Home() {
 
   return (
     <main
-      className="bg-combined-radial h-screen text-white overflow-y-scroll overflow-x-hidden  snap-y snap-mandatory scroll-smooth scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#74EDF4]/80"
+      className="bg-combined-radial h-screen text-white overflow-y-scroll overflow-x-hidden   scroll-smooth scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#74EDF4]/80"
     >
-     
+      {/** Header */}
+    <Header />
 
       {/** Hero */}
       <section
         id="hero"
-        className='snap-center'
+
         
         
         
@@ -37,7 +38,7 @@ export default function Home() {
 
       {/** Divider */}
       <div
-       
+       className='hidden md:block'
       >
         <div className="border-4 border-[#FFFFFF] w-full" />
         <div className="border-4 border-[#172F31] bg-[#172F31] w-full h-[29px]" />
@@ -47,7 +48,6 @@ export default function Home() {
       {/** Designs */}
       <motion.section
         id="designs"
-        className="snap-center"
         variants={fadeInVariants}
         initial="hidden"
         whileInView="visible"
@@ -59,7 +59,6 @@ export default function Home() {
       {/** Brands */}
       <motion.section
         id="brands"
-        className="snap-center"
         variants={fadeInVariants}
         initial="hidden"
         whileInView="visible"
@@ -71,7 +70,6 @@ export default function Home() {
       {/** Socials */}
       <motion.section
         id="socials"
-        className="snap-center"
         variants={fadeInVariants}
         initial="hidden"
         whileInView="visible"
@@ -81,12 +79,11 @@ export default function Home() {
       </motion.section>
 
       
-
+      
       {/** Footer */}
       <section
-        id="about"
-        className="snap-center"
-        >
+        
+        > 
         <Footer />
       </section>
     </main>

@@ -3,8 +3,8 @@ import React from 'react'
 
 function OtherSocials() {
   return (
-    <div className='flex flex-col items-center justify-center font-unigeo space-y-8 md:space-y-16'>
-    <p className='text-lg md:text-xl text-[#8AC7CA] tracking-widest' >CONNECT WITH ME ON SOCIALS</p>
+    <div className='flex flex-col items-center justify-center font-unigeo space-y-12 md:space-y-16 '>
+    <p className='text-lg md:text-xl text-[#8AC7CA] tracking-wide' >CONNECT WITH ME ON SOCIALS</p>
     <div className="lg:flex lg:space-x-7  items-center grid grid-cols-2 gap-12 md:gap-24 ">
      <div className='font-unigeo' >
      <a
@@ -30,7 +30,7 @@ function OtherSocials() {
         href="https://x.com/joelmgbikeh"
         target="_blank"
         rel="noopener noreferrer"
-        className='flex flex-col items-center justify-center lg:flex-row lg:space-x-4'
+        className='flex flex-col items-center justify-center lg:flex-row lg:space-x-4 '
       >
         <Image
         className='w-10 h-10 lg:w-7 lg:h-7'

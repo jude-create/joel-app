@@ -67,19 +67,20 @@ export const Web3Design = () => {
     };
   
     return (
-      <div className="p-4  relative flex flex-col items-center mx-auto w-screen top-8  ">
-        <div className="md:flex md:space-x-4 lg:space-x-5  lg:px-12 ">
-          <p className="text-center text-[#74EDF4] text-lg md:text-xl lg:text-2xl font-normal tracking-wider">
+      <div className="p-4  relative  mx-auto w-screen top-8  ">
+        <div className="md:flex md:px-3 md:space-x-2 lg:px-5 xl:px-12   lg:space-x-0  ">
+          <p className="text-center text-[#74EDF4] text-lg md:text-xl lg:text-2xl 
+          font-normal tracking-wider md:w-2/5 xl:w-[30%]">
             Web3 DESIGN PORTFOLIO
           </p>
-          <div className="mt-5 flex flex-col items-center">
-            <div className="border-2 border-[#FFFFFF] bg-[#FFFFFF] w-28 md:w-[400px] lg:w-[500px] xl:w-[750px] " />
-            <div className="border-2 border-[#158E95] bg-[#158E95] w-28 md:w-[400px] lg:w-[500px] xl:w-[750px]" />
+          <div className="mt-5 flex flex-col items-center md:mt-3 w-full md:w-3/5 xl:w-[70%]">
+            <div className="border-2 border-[#FFFFFF] bg-[#FFFFFF] w-[25%]  md:w-full  " />
+            <div className="border-2 border-[#158E95] bg-[#158E95] w-[25%]  md:w-full " />
           </div>
         </div>
   
-        <div  className="relative mt-10 space-y-7  pb-16 px-5 pt-2 md:px-9  
-      md:grid grid-cols-2 md:gap-6  md:space-y-0 lg:grid lg:grid-cols-3  lg:px-20 lg:gap-7 xl:gap-8 ">
+        <div  className="relative flex flex-col items-center mt-10 space-y-7  pb-16 px-5 pt-2 md:px-9 lg:px-12 xl:px-20  
+      md:grid grid-cols-2 md:gap-6  md:space-y-0 lg:grid lg:grid-cols-3   lg:gap-7 ">
           {images.map((image, index) => (
             <div
               key={index}

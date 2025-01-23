@@ -25,7 +25,7 @@ export const Footer = () => {
       <div className="border-2 border-[#999999] hidden md:block mt-20" />
 
       {/* Desktop Footer */}
-      <footer className="hidden md:flex md:justify-between md:items-center p-12 relative bottom-0 w-screen ">
+      <footer className="hidden md:flex justify-between items-center p-12 relative bottom-0 w-screen ">
         <Link href="/#hero">
           <Image
             src="/images/logo.png"

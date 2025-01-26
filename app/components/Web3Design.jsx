@@ -69,7 +69,7 @@ export const Web3Design = () => {
     return (
       <div className="flex flex-col justify-center items-center  ">
       {/**Header */}
-     <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between w-full px-6  md:space-x-4 lg:space-x-6 md:px-10 lg:px-14">
+     <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between w-full px-6  md:space-x-4 lg:space-x-6 ">
         <p className="text-center text-[#74EDF4] text-lg md:text-xl lg:text-2xl font-normal tracking-wider whitespace-nowrap  md:text-left">
         Web3 DESIGN PORTFOLIO
         </p>
@@ -79,7 +79,7 @@ export const Web3Design = () => {
         </div>
       </div>
   
-        <div  className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-5 md:px-9 lg:px-14 xl:px-20 ">
+        <div  className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 ">
           {images.map((image, index) => (
             <div
               key={index}

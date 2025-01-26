@@ -5,7 +5,7 @@ export const Brands = () => {
   return (
     <div className="relative flex flex-col justify-center items-center w-screen top-32 md:top-44 mb-20">
       {/* Heading Section */}
-      <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between w-full px-6  md:space-x-4 lg:space-x-6 md:px-10 lg:px-14">
+      <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between w-full px-6  md:space-x-4 lg:space-x-6">
         <p className="text-center text-[#74EDF4] text-lg md:text-xl lg:text-2xl font-normal tracking-wider whitespace-nowrap  md:text-left">
           BRANDS I WORK WITH
         </p>
@@ -16,7 +16,7 @@ export const Brands = () => {
       </div>
 
       {/* Mobile Image Section */}
-      <div className=" md:hidden px-14 py-8">
+      <div className=" md:hidden px-11 py-8">
         <Image
           className="brightness-110 contrast-125 mx-auto"
           src="/images/brands.png"
@@ -28,7 +28,7 @@ export const Brands = () => {
       </div>
 
       {/* Desktop Image Section */}
-      <div className="mt-10 hidden md:flex justify-center w-full px-10 lg:px-16">
+      <div className="mt-10 hidden md:flex justify-center w-full px-10 ">
         <Image
           className="brightness-110 contrast-125 shadow-lg"
           src="/images/brands-desktop.png"

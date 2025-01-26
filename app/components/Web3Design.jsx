@@ -67,20 +67,19 @@ export const Web3Design = () => {
     };
   
     return (
-      <div className="p-4  relative  mx-auto w-screen top-8  ">
-        <div className="md:flex md:px-3 md:space-x-2 lg:px-5 xl:px-12   lg:space-x-0  ">
-          <p className="text-center text-[#74EDF4] text-lg md:text-xl lg:text-2xl 
-          font-normal tracking-wider md:w-2/5 xl:w-[30%]">
-            Web3 DESIGN PORTFOLIO
-          </p>
-          <div className="mt-5 flex flex-col items-center md:mt-3 w-full md:w-3/5 xl:w-[70%]">
-            <div className="border-2 border-[#FFFFFF] bg-[#FFFFFF] w-[25%]  md:w-full  " />
-            <div className="border-2 border-[#158E95] bg-[#158E95] w-[25%]  md:w-full " />
-          </div>
+      <div className="flex flex-col justify-center items-center p-4  ">
+      {/**Header */}
+     <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between w-full px-6  md:space-x-4 lg:space-x-6 md:px-10 ">
+        <p className="text-center text-[#74EDF4] text-lg md:text-xl lg:text-2xl font-normal tracking-wider whitespace-nowrap  md:text-left">
+        Web3 DESIGN PORTFOLIO
+        </p>
+        <div className="mt-5 md:mt-0 flex flex-col items-center w-full ">
+          <div className="border-2 border-[#FFFFFF] bg-[#FFFFFF] w-[25%] md:w-full" />
+          <div className="border-2 border-[#158E95] bg-[#158E95] w-[25%] md:w-full" />
         </div>
+      </div>
   
-        <div  className="relative flex flex-col items-center mt-10 space-y-7  pb-16 px-5 pt-2 md:px-9 lg:px-12 xl:px-20  
-      md:grid grid-cols-2 md:gap-6  md:space-y-0 lg:grid lg:grid-cols-3   lg:gap-7 ">
+        <div  className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-5 md:px-9 lg:px-12 xl:px-20 ">
           {images.map((image, index) => (
             <div
               key={index}
@@ -92,7 +91,7 @@ export const Web3Design = () => {
                 alt={image.name}
                 width={399}
                 height={221}
-                className="transition duration-75 ease-in-out filter rounded-md shadow-lg shadow-black "
+                className="transition duration-75 ease-in-out filter rounded-md shadow-lg shadow-black lg:w-[500px] "
               />
   
               {/* Overlay */}

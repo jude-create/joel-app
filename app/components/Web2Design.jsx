@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { XCircleIcon } from "@heroicons/react/24/outline";
-import {motion} from "framer-motion";
 
 export const Web2Design = () => {
   const [clickedImages, setClickedImages] = useState([]); // Tracks the clicked images
@@ -51,7 +50,6 @@ export const Web2Design = () => {
       link: "https://www.behance.net/gallery/212976623/E-Lab-Academy-Website-Design",
     },
   ];
-  
 
   const handleImageClick = (index) => {
     if (!clickedImages.includes(index)) {
@@ -64,24 +62,20 @@ export const Web2Design = () => {
   };
 
   return (
-    <div
-     
-     className="p-4  relative mx-auto w-screen   ">
-      <div className="md:flex md:px-3 md:space-x-2 lg:px-5 xl:px-12  lg:space-x-0  ">
-        <p className="text-center text-[#74EDF4] text-lg md:text-xl lg:text-2xl 
-        font-normal tracking-wider md:w-2/5 xl:w-[30%] ">
-          Web2 DESIGN PORTFOLIO
+    <div className=" flex flex-col justify-center items-center p-4">
+      {/* Header Section */}
+      <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between w-full px-6  md:space-x-4 lg:space-x-6 md:px-10 ">
+        <p className="text-center text-[#74EDF4] text-lg md:text-xl lg:text-2xl font-normal tracking-wider whitespace-nowrap  md:text-left">
+        Web2 DESIGN PORTFOLIO
         </p>
-        <div className="mt-5 flex flex-col items-center md:mt-3 md:w-3/5 xl:w-[70%] ">
-          <div className="border-2 border-[#FFFFFF] bg-[#FFFFFF] w-[25%]  md:w-full  " />
-          <div className="border-2 border-[#158E95] bg-[#158E95] w-[25%]  md:w-full  " />
+        <div className="mt-5 md:mt-0 flex flex-col items-center w-full ">
+          <div className="border-2 border-[#FFFFFF] bg-[#FFFFFF] w-[25%] md:w-full" />
+          <div className="border-2 border-[#158E95] bg-[#158E95] w-[25%] md:w-full" />
         </div>
       </div>
 
-      <div 
-      
-      className="relative flex flex-col items-center mt-10 space-y-7  pb-10 px-5 pt-2 md:px-9 lg:px-12 xl:px-20   
-      md:grid grid-cols-2 md:gap-6  md:space-y-0 lg:grid lg:grid-cols-3  lg:gap-7 xl:gap-8 ">
+      {/* Image Grid */}
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-5 md:px-9 lg:px-12 xl:px-20">
         {images.map((image, index) => (
           <div
             key={index}
@@ -93,45 +87,43 @@ export const Web2Design = () => {
               alt={image.name}
               width={399}
               height={221}
-              className="transition duration-75 ease-in-out filter rounded-md shadow-lg shadow-black "
+              className="transition duration-75 ease-in-out filter rounded-md shadow-lg shadow-black lg:w-[500px] "
             />
 
             {/* Overlay */}
             {clickedImages.includes(index) && (
-              <div
-                className="absolute h-[97%] mt-1 w-[99%]  inset-0 bg-[#000000]/95 flex flex-col justify-between 
-                z-10 transition duration-75 ease-out p-4 shadow-lg shadow-black rounded-md "
-              >
+              <div className="absolute inset-0 bg-[#000000]/95 flex flex-col justify-between z-10 p-4 shadow-lg shadow-black rounded-md">
                 {/* Top Section */}
                 <div>
-                <div className="flex justify-between items-center">
-                  <p className="text-lg font-medium md:text-xl  text-white tracking-wider">
-                    {image.name}
-                  </p>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation(); // Prevent click from affecting parent
-                      handleOverlayClose(index); // Close overlay for this image
-                    }}
-                    className="text-white"
-                  >
-                    <XCircleIcon className="h-6 w-6" />
-                  </button>
+                  <div className="flex justify-between items-center">
+                    <p className="text-lg font-medium md:text-xl text-white tracking-wider">
+                      {image.name}
+                    </p>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation(); // Prevent click from affecting parent
+                        handleOverlayClose(index); // Close overlay for this image
+                      }}
+                      className="text-white"
+                    >
+                      <XCircleIcon className="h-6 w-6" />
+                    </button>
+                  </div>
+                  <p className="pt-2">{image.description}</p>
                 </div>
-                <p className="pt-2">{image.description}</p>
-              </div>
+
                 {/* Bottom Section */}
                 <div className="flex justify-between items-center mt-4">
-                  <p className=" text-sm text-[#9DF6FA]">{image.type}</p>
+                  <p className="text-sm text-[#9DF6FA]">{image.type}</p>
                   <button className="bg-[#3A777A]/80 px-12 py-1 rounded-full text-white font-medium text-sm">
-                  <a
-              href={image.link}
-               target="_blank"
-            rel="noopener noreferrer"
-            className='flex flex-col items-center justify-center'
-      >
-                    View
-               </a>
+                    <a
+                      href={image.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center justify-center"
+                    >
+                      View
+                    </a>
                   </button>
                 </div>
               </div>

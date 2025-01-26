@@ -11,7 +11,7 @@ export default function TheJmPodcast() {
         <Header />
         <section className="flex flex-col justify-between flex-grow lg:mt-8 ">
           {/* Main Content */}
-          <div className="flex flex-col justify-center items-center space-y-10 font-unigeo flex-grow lg:mb-6">
+          <div className="flex flex-col justify-center items-center space-y-10 font-unigeo flex-grow lg:mb-8">
             <div className="flex space-x-1">
               <Image src="/images/logo2.png" alt="logo" width={39} height={44} />
               <Image

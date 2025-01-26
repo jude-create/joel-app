@@ -29,8 +29,8 @@ export default function TheJmPodcast() {
               Stay connected to receive updates when the podcast begins.
             </p>
 
-            <div className="pt-7 space-y-8 flex flex-col items-center lg:pt-5">
-              <button className="bg-[#FF0000] flex items-center justify-center px-8 py-4 rounded-full space-x-2">
+            <div className="pt-7 space-y-8 flex flex-col items-center justify-center lg:pt-4 md:flex md:flex-row md:space-x-14">
+              <button className="bg-[#FF0000] flex items-center justify-center px-8 py-4 rounded-full space-x-2 md:mt-8">
                 <p className="md:font-medium md:text-lg">
                   Subscribe to Youtube channel
                 </p>

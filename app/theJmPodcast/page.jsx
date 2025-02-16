@@ -30,15 +30,16 @@ export default function TheJmPodcast() {
             </p>
 
             <div className="pt-7 space-y-8 flex flex-col items-center justify-center lg:pt-4 md:flex md:flex-row md:space-x-14">
-              <button className="bg-[#FF0000] flex items-center justify-center px-8 py-4 rounded-full space-x-2 md:mt-8">
-                <p className="md:font-medium md:text-lg">
-                  Subscribe to Youtube channel
-                </p>
-                <a
+            <a
                   href="https://www.youtube.com/@the-jm-podcast"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+              <button className="bg-[#FF0000] flex items-center justify-center px-8 py-4 rounded-full space-x-2 md:mt-8">
+                <p className="md:font-medium md:text-lg">
+                  Subscribe to Youtube channel
+                </p>
+                
                   <Image
                     className="w-4 h-3"
                     src="/images/youtube.png"
@@ -46,16 +47,18 @@ export default function TheJmPodcast() {
                     height={14}
                     width={10}
                   />
-                </a>
+                
               </button>
-
-              <button className="bg-[#158E95] flex items-center justify-center px-8 py-4 rounded-full space-x-2">
-                <p className="md:font-medium md:text-lg">Follow on Spotify</p>
-                <a
+              </a>
+          
+              <a
                   href="https://creators.spotify.com/pod/show/joel-mgbikeh"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+              <button className="bg-[#158E95] flex items-center justify-center px-8 py-4 rounded-full space-x-2">
+                <p className="md:font-medium md:text-lg">Follow on Spotify</p>
+               
                   <Image
                     className=""
                     src="/images/spotify.png"
@@ -63,8 +66,9 @@ export default function TheJmPodcast() {
                     height={14}
                     width={10}
                   />
-                </a>
+               
               </button>
+              </a>
             </div>
             </div>
 

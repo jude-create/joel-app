@@ -10,10 +10,10 @@ export const Web3Design = () => {
     const images = [
       {
          src: "/images/web3-design1.png",
-         name: "Mmuta", 
-         description: "Mobile App",
-          type: "EdTech",
-          link: "https://www.behance.net/gallery/188815537/Mmuta-(EdTect)-Case-Study-Mobile-App-Design/modules/1067757739",
+         name: "NebulaX", 
+         description: "Landing Page",
+          type: "Web3, DeFi, Crypto",
+          link: "https://www.behance.net/gallery/218994991/NebulaX-Landing-Page-Design",
          },
 
       { 
